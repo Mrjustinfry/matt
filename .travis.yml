@@ -1,5 +1,12 @@
- language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: tIOC5njh3lRzXFCI+URblEVHHNLHc6JDR8MzGBPp1N8NGQltUJmIlYEbtEHbQrN9DoC2KaPoPUDXV+CjNKMM5YDmrYqVSKUDeknKaIa0jdS2gzRWV3MBRPABmoR766xuDaVXWcwgKspwTtB0oZaY/qT6Fvhl+aU9J6k1bkd98EDnN5Agu5QWuiPTPH6qgPPRLsQ8WXQdVkcnefC1hDQzvTZ9DXZB26nYOnyx6ELPZnXH8l42+E36PsS2vNNyRZctqjOIxr45eVFawPmdotMmvLd48Oa2jF1wC08vdlE/s9xcPOCmepD+o+I3LZktikG0LP6PwhPQcBiUgKMPjcexPr4aBn1oHg90RB2kp+GmSijiB8M1hkPwp1anEp3m2tmmF+B/dGxm39OQl0VkPp+07+3TAYiEqL1p0KF/vSsB4CycKCBVAKwLdWFASqvJCHzP5H/syvTzklrRKgmdjfbScTeMsTq0Dn/KKTvCptyD3CUBKWQn0CRJ952nMUVu0w3Ui/7kiuHYrlkWJJvpaA0ky0LNACSdVrtyvcZ1gxc3MFAO0TQxRb98/fiWc1dwBt0aw9iI2RvVdKYc4CFguWpGffoljIaaPoPU1grcr0AVoYcGAOGDQQP0zC12ROCT25c2abyKhP1FVuN+y/apy6qSAFiEkFEQdLtCLYioC8EA2oY=
+  app: lit-mountain-74153
+  on:
+    repo: Mrjustinfry/matt
