@@ -1,0 +1,43 @@
+.heroSection {
+    background-image: url("/public/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border: 1px solid transparent;
+    -webkit-box-shadow: -1px 0px 10px 0px grey;
+    -moz-box-shadow: -1px 0px 10px 0px grey;
+    -ms-box-shadow: -1px 0px 10px 0px grey;
+    -o-box-shadow: -1px 0px 10px 0px grey;
+    box-shadow: -1px 0px 10px 0px grey;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .heroQuote {
+    color: #EAEAEA;
+    font-size: 2rem;
+    margin: auto;
+    font-family: "Mrs Sheppards", cursive;
+    -webkit-text-shadow: 3px 3px 7px black;
+    -moz-text-shadow: 3px 3px 7px black;
+    -ms-text-shadow: 3px 3px 7px black;
+    -o-text-shadow: 3px 3px 7px black;
+    text-shadow: 3px 3px 7px black;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .author {
+    font-size: 1rem;
+  }
+
+
+@media only screen and (min-width: 780px) {
+    .heroQuote {
+      font-size: 5rem;
+    }
+  
+    .author {
+      font-size: 2rem;
+    }
+}
