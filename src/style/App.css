@@ -10,6 +10,13 @@ body {
 
 }
 
+.checkoutIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 3rem;
+}
+
 ::-webkit-scrollbar {
   width: 0.5em;
 }

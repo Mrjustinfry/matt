@@ -1,21 +1,30 @@
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: black;
-    display: flex;
-    border-bottom: 2px solid #00d8d8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: black;
+  display: -webkit-flex;
+  display: flex;
+  border-right: 2px solid #00d8d8;
+  }
+
+  .navLi {
+    padding: 1em;
   }
   
   .navList {
     list-style: none;
+    display: -webkit-inline-flex;
     display: inline-flex;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
-    width: 100%;
-    margin: 0.2em;
+    width: 100vw;
+    margin: 0 2em;
     padding: 0;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    height: 100vh;
   }
   
   .navLink {
@@ -37,10 +46,31 @@ nav {
     height: 3em;
   }
 
+  .navBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 2rem;
+  }
+
+  .closeBtn {
+    position: relative;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+
   @media only screen and (min-width: 780px) {
 
     .navLink {
       font-size: 1rem;
     }
+
+    .navList {
+      width: initial;
+    }
     
+
   }

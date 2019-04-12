@@ -5,7 +5,7 @@ import '../style/ContactForm.css';
 class ContactForm extends Component {
     render() {
         return (
-            <section className="contactSection">
+            <section className="contactSection" id="contact">
             <h2 className="contactHeader">Contact Matt</h2>
             <form action="contact.php" method="POST" className="contactForm">
               <label htmlFor="name" aria-label="name" id="name"><input type="text" name="name" className="inputText inputs" placeholder="Name *" /></label><br />

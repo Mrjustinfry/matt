@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { PLAN } from '../PlanInfo';
+
 import '../style/PlanModal.css';
 
 class PlanModal extends Component {
