@@ -5,3 +5,31 @@
 body {
   margin: 0;
 }
+
+.App {
+
+}
+
+.checkoutIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #EAEAEA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d8d8;
+  border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
