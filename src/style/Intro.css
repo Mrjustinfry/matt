@@ -19,10 +19,39 @@
     font-family: 'Graduate', cursive;
     font-size: 3rem;
     background-color: white;
+    padding: 1%;
 }
 
 .introPrice {
     font-weight: bolder;
     font-size: 2rem;
     color: #00d8d8;
+}
+
+.shopPlansBtn {
+    flex-basis: 10rem;
+    max-height: 10rem;
+    text-align: center;
+    background-color: white;
+    padding: 3%;
+    text-decoration: none;
+    color: #00d8d8;
+    font-family: 'Graduate', cursive;
+    border: 3px solid #00d8d8;
+}
+
+.linkBox {
+    display: flex;
+    justify-content: center;
+}
+
+.shopPlansBtn:hover {
+    flex-basis: 10rem;
+    background-color: white;
+    padding: 3%;
+    text-decoration: none;
+    color: #00d8d8;
+    font-family: 'Graduate', cursive;
+    border: 3px solid #00d8d8;
+    text-align: center;
 }

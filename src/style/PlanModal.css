@@ -72,6 +72,7 @@
   }
   
   .cents {
+    font-family: initial;
     font-variant-numeric: diagonal-fractions;
   }
 

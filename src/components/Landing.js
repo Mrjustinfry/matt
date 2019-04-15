@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Hero from './Hero';
+import AboutMatt from './AboutMatt';
+import Testimonial from './Testimonial';
 import Intro from './Intro';
 
 class Landing extends Component {
@@ -8,6 +9,8 @@ class Landing extends Component {
         return (
             <div>
             <Intro />
+            <AboutMatt />
+            <Testimonial />
             </div>
         )
     }
