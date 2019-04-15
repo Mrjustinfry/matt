@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import PlanBox from './PlanBox';
 import PlanInfo from '../PlanInfo';
+import Hero from './Hero';
 
 import '../style/PlanSection.css';
 
@@ -30,7 +31,7 @@ class PlanSection extends Component {
     render(props) {
         return (
             <section className="PlanSection">
-                <p>{PLAN.type}</p>
+                <Hero />
                 <div className="planTabs">
                     <button 
                         className="runTab"

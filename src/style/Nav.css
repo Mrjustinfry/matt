@@ -44,13 +44,14 @@ nav {
   
   .navLogo {
     height: 3em;
+    margin: 0 40%;
   }
 
   .navBtn {
     position: fixed;
     top: 10px;
     left: 10px;
-    height: 2rem;
+    height: 1rem;
   }
 
   .closeBtn {
@@ -60,6 +61,8 @@ nav {
     border: none;
     color: white;
     font-size: 2rem;
+    top: 10px;
+    right: 25%;
   }
 
   @media only screen and (min-width: 780px) {
@@ -72,5 +75,8 @@ nav {
       width: initial;
     }
     
+    .navBtn {
+      height: 3rem;
+    }
 
   }
