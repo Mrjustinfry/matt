@@ -1,8 +1,9 @@
 .heroSection {
-    background-image: url("/public/images/bg.png");
+    background-image: url("/bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-color: black;
+    height: 40vh;
     border: 1px solid transparent;
     -webkit-box-shadow: -1px 0px 10px 0px grey;
     -moz-box-shadow: -1px 0px 10px 0px grey;

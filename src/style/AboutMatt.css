@@ -1,0 +1,76 @@
+.newsImg {
+    height: 10em;
+    float: left;
+    margin: 0.5em;
+  }
+  
+  .aboutInfo {
+    font-family: "Open Sans", sans-serif;
+    padding: 3%;
+  }
+  .aboutInfo p {
+    text-align: left;
+    text-indent: 1em;
+  }
+  
+  #aboutMe {
+    font-family: "Graduate", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline #00d8d8;
+  }
+
+  .bannerImgBox {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+  }
+
+  .accent {
+    height: 2em;
+    width: 2em;
+    animation-name: spin;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .accentAlt {
+    animation-delay: 500ms;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @media only screen and (min-width: 780px) {
+    .newsImg {
+        height: 16em;
+      }
+    
+      .aboutMeSection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        text-align: center;
+      }
+    
+      .aboutInfo {
+        flex: 2;
+      }
+    
+      .accent {
+        margin: auto;
+      }
+    
+      .bannerImgBox {
+        flex-flow: column;
+        margin: unset;
+        flex: 1;
+      }
+  }

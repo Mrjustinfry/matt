@@ -1,0 +1,132 @@
+.bgImage {
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position-x: 85%;
+    z-index: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: white;
+    background-color: rgba(26, 24, 24, 0.48);
+    padding: 1em;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .whatList, .whyList {
+    list-style: none; 
+  }
+  
+  .whatList li::before, .whyList li::before {
+    content: '\02605'; 
+    color: #00d8d8; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+
+.planWhat, .planWhy {
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+  .planInnerBox {
+
+  }
+  
+  .planBoxLeftTop, .planBoxRightBottom {
+
+  }
+
+  .returnPolicy, .shippingInfo {
+      font-size: x-small;
+  }
+  
+  .planTitle {
+    text-align: center;
+    font-family: "Graduate", cursive;
+    border: 3px solid #00d8d8;
+    padding: 0.5em;
+    background-color: rgba(0, 198, 198, 0.37);
+    border-radius: 0.5em;
+    width: 100%;
+    margin: auto;
+    text-shadow: 2px 3px 6px black;
+  }
+
+  .price {
+    font-size: x-large;
+    font-weight: bold;
+    color: #00d8d8;
+    text-shadow: 0 0 8px black;
+  }
+  
+  .cents {
+    font-variant-numeric: diagonal-fractions;
+  }
+
+  hr {
+      border: 2px solid ghostwhite;
+  }
+
+  .addToCartButton {
+    width: 100%;
+    border: none;
+    padding: 3%;
+    background-color: #00d8d8;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Open Sans', cursive;
+  }
+
+  .skuNumber {
+      font-size: xx-small;
+  }
+
+  #back {
+    margin: -.5em 0 1em 0;
+    font-size: x-small;
+  }
+
+  #back:hover {
+      cursor: pointer;
+      color: #00d8d8;
+  }
+
+  .quantity {
+      font-weight: bold;
+  }
+
+  .quantityInput {
+    width: 5em;
+    padding: 2%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 780px) {
+      .planInnerBox {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      }
+
+      .planBoxLeftTop, .planBoxRightBottom {
+        flex: 2;
+        padding: 5%;
+      }
+
+      .container {
+          font-size: larger;
+      }
+  }

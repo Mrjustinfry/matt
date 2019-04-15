@@ -1,0 +1,99 @@
+.runPlanBox {
+    padding: 2%;
+}
+
+.runBoxBg {
+    background-image: url(/sneakers.jpg);
+    background-repeat: no-repeat;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.runBoxHead {
+    border: 5px solid transparent;
+}
+
+.runHeader {
+    font-family: "Open Sans", cursive;
+    font-weight: bold;
+}
+
+.innerRunBox {
+    position: absolute;
+    transform: translate(0%, -100%);
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.49);
+    padding: 1%;
+}
+
+.planTabs {
+    display: flex;
+    width: 100%;
+}
+
+.runTab:hover, .triTab:hover {
+    cursor: pointer;
+}
+
+.runTab, .triTab {
+    flex: 1;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Graduate', cursive;
+    font-weight: bold;
+    background-color: white;
+}
+
+.runPlanList, .runPlanType {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    text-align: center;
+    font-family: 'Graduate', cursive;
+    font-weight: bold;
+}
+
+.runPlanList li, .runPlanType li {
+    flex: auto;
+    margin: 2px;
+    list-style: none;
+    border: 2px solid #00d8d8;
+    padding: 2%;
+}
+
+.runPlanList li:hover, .runPlanType li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #00d8d8;
+}
+
+.planType {
+    font-family: 'Open Sans', cursive;
+    font-weight: bold;  
+}
+
+.runInfo {
+    padding: 2em;
+}
+
+@media only screen and (min-width: 780px) {
+    .runHeader {
+        font-size: xx-large;
+    }
+
+    .runInfo {
+        font-size: large;
+    }
+
+    .runTab, .triTab {
+        font-size: larger;
+    }
+}

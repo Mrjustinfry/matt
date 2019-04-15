@@ -1,0 +1,28 @@
+.introBox {
+    height: 60vh;
+    background-image: url('/sneakers.jpg');
+    background-position: center;
+    background-size: cover;  
+    padding: 5%; 
+}
+
+.introInfo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', cursive;
+    text-shadow: 1px 2px 4px black;
+}
+
+.introHead {
+    font-family: 'Graduate', cursive;
+    font-size: 3rem;
+    background-color: white;
+}
+
+.introPrice {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #00d8d8;
+}
