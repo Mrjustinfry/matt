@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
 import Hero from './Hero';
+import Intro from './Intro';
 
 class Landing extends Component {
     render() {
         return (
-            <Hero />
+            <div>
+            <Intro />
+            </div>
         )
     }
 }
