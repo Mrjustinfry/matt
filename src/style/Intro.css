@@ -29,8 +29,6 @@
 }
 
 .shopPlansBtn {
-    flex-basis: 10rem;
-    max-height: 10rem;
     text-align: center;
     background-color: white;
     padding: 3%;
@@ -41,8 +39,8 @@
 }
 
 .linkBox {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 1em;
 }
 
 .shopPlansBtn:hover {
