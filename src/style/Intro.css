@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;  
     padding: 5%; 
+    border-bottom: 2px solid #00d8d8;
 }
 
 .introInfo {
@@ -31,7 +32,7 @@
 .shopPlansBtn {
     text-align: center;
     background-color: white;
-    padding: 3%;
+    padding: 1em;
     text-decoration: none;
     color: #00d8d8;
     font-family: 'Graduate', cursive;
@@ -44,12 +45,9 @@
 }
 
 .shopPlansBtn:hover {
-    flex-basis: 10rem;
-    background-color: white;
-    padding: 3%;
-    text-decoration: none;
-    color: #00d8d8;
-    font-family: 'Graduate', cursive;
-    border: 3px solid #00d8d8;
-    text-align: center;
+    cursor: pointer;
+    background-color: #00d8d8;
+    color: white;
+    border: 3px solid white;
+    transition-duration: 500ms;
 }
