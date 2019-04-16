@@ -10,7 +10,16 @@ nav {
   }
 
   .navLi {
-    padding: 1em;
+    padding: 3rem;
+    text-align: center;
+    margin: auto 0;
+    height: 100%;
+    border-bottom: 1px solid darkslategrey;
+  }
+
+  .navLi:hover {
+    cursor: pointer;
+    background-color: darkslategrey;
   }
   
   .navList {
@@ -19,32 +28,40 @@ nav {
     display: inline-flex;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    width: 100vw;
-    margin: 0 2em;
-    padding: 0;
     -webkit-flex-flow: column;
     flex-flow: column;
     height: 100vh;
+    width: 10rem;
+    margin: 0;
+    padding: 0;
   }
   
   .navLink {
     color: #00d8d8;
     margin: auto;
     font-family: "Graduate", cursive;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    text-decoration: none;
   }
   
   .navLink:hover {
     cursor: pointer;
     color: #EAEAEA;
-    text-decoration-line: underline;
-    text-decoration-color: #00d8d8;
-    transition-duration: 500ms;
   }
   
   .navLogo {
     height: 3em;
-    margin: 0 40%;
+  }
+
+  .logoLi {
+    background-color: #00d8d8;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logoLi:hover {
+    cursor: pointer;
+    background-color: #00d8d8;
   }
 
   .navBtn {
@@ -54,25 +71,25 @@ nav {
     height: 1rem;
   }
 
+  .navBtn:hover {
+    cursor: pointer;
+  }
+
   .closeBtn {
-    position: relative;
-    height: 3rem;
     background-color: transparent;
     border: none;
-    color: white;
+    color: #00d8d8;
     font-size: 2rem;
-    top: 10px;
-    right: 25%;
+  }
+
+  .closeBtn:hover {
+    cursor: pointer;
   }
 
   @media only screen and (min-width: 780px) {
 
     .navLink {
       font-size: 1rem;
-    }
-
-    .navList {
-      width: initial;
     }
     
     .navBtn {

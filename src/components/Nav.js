@@ -24,17 +24,17 @@ class Nav extends Component {
         return (
             <nav aria-live="polite">
             <ul className="navList">
-              <li className="navLi"><Link to="/about" className="navLink">About</Link></li>
-              <li className="navLi"><Link to="/plan" className="navLink">Plans</Link></li>
-              <li className="navLi"><Link to="/social" className="navLink">Social</Link></li>
-              <li className="navLi"><Link to="#contact" className="navLink">Contact</Link></li>
-              <li><Link to="/"><img src="./logo2.png" alt="Matt's Coaching" className="navLogo" /></Link></li>
+              <li className="navLi logoLi"><Link to="/" onClick={this.toggleHidden}><img src="./logo.gif" alt="Matt's Coaching" className="navLogo" /></Link></li>
+              <li className="navLi"><Link to="/about" onClick={this.toggleHidden} className="navLink">About</Link></li>
+              <li className="navLi"><Link to="/plan" onClick={this.toggleHidden} className="navLink">Plans</Link></li>
+              <li className="navLi"><Link to="/social" onClick={this.toggleHidden} className="navLink">Social</Link></li>
+              <li className="navLi"><Link to="#contact" onClick={this.toggleHidden} className="navLink">Contact</Link></li>
+              <li className="navLi closeLi"><button
+                className="closeBtn"
+                onClick={this.toggleHidden}
+                >&#9746;
+              </button></li>
             </ul>
-            <button
-              className="closeBtn"
-              onClick={this.toggleHidden}
-              >&#9746;
-              </button>
           </nav>
         );
         } else {

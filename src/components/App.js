@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 import Nav from './Nav';
-import Hero from './Hero';
 import AboutMatt from './AboutMatt';
 import Testimonial from './Testimonial';
 import PlanSection from './PlanSection';
 import ContactForm from './ContactForm';
 import Footer from './Footer';
 import Landing from './Landing';
-import PlanModal from './PlanModal';
 import Checkout from './Checkout';
 
 import '../style/App.css';
