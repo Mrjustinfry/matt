@@ -1,53 +1,51 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 
 
-class PlanBox extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            level: '',
-            type: ''
-        }
+function PlanBox(props) {
+    const [ level, setLevel ] = useState('');
+    const [ type, setType ] = useState('');
+
+    const showInfo = () => {  //for the modal. 
+        console.log('type' + JSON.stringify({type}) + 'level' + JSON.stringify({level}));
     }
 
-    setLevel(userLevel) {
-        this.setState({
-            level: userLevel
-        })
-    }
-
-    render() {
         return (
             <div className="runPlanBox">
                     <div className="runBoxHead">
                         <div className="runBoxBg" style={
-                    {backgroundImage: "url(" + this.props.background + ")"}}></div>
+                    {backgroundImage: "url(" + props.background + ")"}}></div>
                         <div className="innerRunBox">
-                        <p className="runHeader">{this.props.head}</p>
-                        <p className="runInfo">{this.props.description}</p></div>
+                        <p className="runHeader">{props.head}</p>
+                        <p className="runInfo">{props.description}</p></div>
                     </div>
-                    <p className="planType">Choose a Training Level:</p>
+                    <p className="planType">Choose a Training Level: </p>
                     <div className="runPlanList">
-                        <li 
-                            id="begginer"
-                            onClick={() => this.setLevel('beginner')}
-                            >Beginner</li>
-                        <li>Intermediate</li>
-                        <li>Advanced</li>
+                        <li onClick={() => setLevel('Beginner')}>Beginner</li>
+                        <li onClick={() => setLevel('Intermediate')}>Intermediate</li>
+                        <li onClick={() => setLevel('Advanced')}>Advanced</li>
                     </div>
-                    <p>{this.props.level}</p>
                     <p className="planType">Choose a Training Type:</p>
                     <ul className="runPlanType">
-                        <li>{this.props.type1}</li>
-                        <li>{this.props.type2}</li>
-                        <li>{this.props.type3}</li>
-                        <li>{this.props.type4}</li>
+                        <li onClick={() => setType(props.type1)}>{props.type1}</li>
+                        <li onClick={() => setType(props.type2)}>{props.type2}</li>
+                        <li onClick={() => setType(props.type3)}>{props.type3}</li>
+                        <li onClick={() => setType(props.type4)}>{props.type4}</li>
                     </ul>
-                    <div className="planOutput"></div>
+                    <div className="planOutput">
+                        <div className="chosenHead">
+                            <p className="planHead">Level:</p><p className="chosenInfo">{level}</p>
+                        </div>
+                        <div className="chosenSub"><p className="planHead">Type:</p><p className="chosenInfo">{type}</p></div>
+                        <button 
+                            className="chosenBtn"
+                            onClick={() => showInfo()}
+                            >See Details
+                        </button>
+                    </div>
                 </div>
         )
     }
-}
+
 
 export default PlanBox;
