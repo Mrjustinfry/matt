@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import { PLAN } from '../PlanInfo';
+import {connect} from 'react-redux';
 
 import '../style/PlanModal.css';
 
@@ -9,10 +8,7 @@ class PlanModal extends Component {
     render(props) {
         return (
             <section className="planSection">
-                <div className="bgImage" style={
-                    {backgroundImage: "url(" + this.props.background + ")"}}></div>
                 <div className="container">
-                    <p id="back">&larr; back to plans</p>
                     <h2 className="planTitle">{this.props.planTitle}</h2>
                     <div className="planInnerBox">
                     <div className="planBoxLeftTop">
@@ -33,8 +29,8 @@ class PlanModal extends Component {
                     </div>
                     <div className="planBoxRightBottom">
                     <p className="price">${this.props.price}<span className="cents">.00</span></p>
-                    <p className="quantity">Quantity: <input type="number" name="quantity" className="quantityInput" value="1" /></p>
-                    <button type="submit" name="submit" for="quantity" className="addToCartButton">Add to Cart</button>
+                    <p className="quantity">Quantity: <input type="number" name="quantity" className="quantityInput" /></p>
+                    <button type="submit" name="submit" htmlFor="quantity" className="addToCartButton">Add to Cart</button>
                     <hr />
                     <p className="returnPolicy">
                         <span className="returnHeader"><strong>RETURN & REFUND POLICY</strong></span><br />
@@ -56,16 +52,6 @@ class PlanModal extends Component {
     }
 }
 
-export default PlanModal;
+export default connect()(PlanModal);
 
-/*        <PlanModal
-          background="./bridgeStretch.jpeg"
-          planTitle="Beginner's 5K"
-          sku="2335"
-          weeks="12"
-          miles="9-13"
-          whyOne="Could be your first race. Ever. AWESOME! Perfect distance to start."
-          whyTwo="Same price as: A solid bottle of wine for your hot date"
-          price="39"
-          />
-*/
+//                <div className="bgImage" style={{backgroundImage: "url(" + this.props.background + ")"}}></div> 

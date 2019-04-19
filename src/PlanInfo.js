@@ -1,5 +1,4 @@
 const PLAN = {
-    'type': {
       'run': { 
         'level': {
           'beg': {
@@ -117,8 +116,7 @@ const PLAN = {
             }
           }
         }
-      }
-    },
+      },
       'tri':{
         'level': {
             'beg': {
@@ -225,6 +223,6 @@ const PLAN = {
             }
         }
       }
-  }
+}
 
   export { PLAN };

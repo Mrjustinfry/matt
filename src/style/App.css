@@ -15,6 +15,7 @@ body {
   top: 10px;
   right: 10px;
   height: 1.5rem;
+  z-index: 2;
 }
 
 .checkoutIcon:hover {
