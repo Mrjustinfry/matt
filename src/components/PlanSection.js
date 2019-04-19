@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
 import PlanBox from './PlanBox';
-import PlanInfo from '../PlanInfo';
 import Hero from './Hero';
 
 import '../style/PlanSection.css';
-
-let PLAN = require('../PlanInfo');
 
 class PlanSection extends Component {
     constructor(props) {
@@ -69,4 +67,8 @@ class PlanSection extends Component {
     }
 }
 
-export default PlanSection;
+PlanSection.defaultProps = {
+    plans: true
+}
+
+export default connect()(PlanSection);
