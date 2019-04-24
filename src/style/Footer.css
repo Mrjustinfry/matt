@@ -4,16 +4,34 @@ footer {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     position: absolute;
-    padding: 5%;
+    padding: 1%;
     width: 100%;
 }
 
 .mattFoot {
     font-size: large;
+    font-family: 'Graduate',cursive;
+    font-weight: bold;
+}
+
+.logoFoot {
+    height: 2em;
+    vertical-align: middle;
+}
+
+.stravaImg {
+    height: 3em;
+    vertical-align: middle;
+}
+
+.instaFoot {
+    height: 2em;
+    vertical-align: middle;
 }
 
 .justinFoot {
-    font-size: small;
+    font-size: x-small;
+    float: right;
 }
 
 .justinLink {
