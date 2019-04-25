@@ -9,15 +9,16 @@
   }
   
   .container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    top: 0;
-    z-index: 3;
     color: white;
-    background-color: rgba(26, 24, 24, 0.48);
     padding: 1em;
-    height: 100vh;
-    overflow-y: scroll;
+    background-color: #0a5e8b;
+    background-image: url(/star.png);
+    background-size: 1em;
+    background-blend-mode: soft-light;
   }
   
   .whatList, .whyList {

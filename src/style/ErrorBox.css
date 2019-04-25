@@ -1,0 +1,17 @@
+.errorBox {
+    border: 2px solid red;
+    text-align: center;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    padding: 1%;
+    background-color: #ffcaca;
+}
+
+.errorInfo {
+    color: red;
+    font-family: 'Open Sans', cursive;
+    font-size: small;
+    font-weight: bold;
+}

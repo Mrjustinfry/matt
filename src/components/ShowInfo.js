@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import {Link, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 import PlanModal from './PlanModal';
+import ErrorBox from './ErrorBox';
 
 let PLAN = require('../PlanInfo');
 
@@ -204,7 +205,7 @@ class ShowInfo extends Component {
                     whyTwo={begHI.why2}
                     price={begHI.price}
                 />
-                ); 
+                );
         case(this.props.planLevel === 'beginner' && this.props.planType === 'Ironman'): 
                 let begI = PLAN.PLAN.tri.level.beg.iron
                 return (
@@ -217,10 +218,114 @@ class ShowInfo extends Component {
                     whyTwo={begI.why2}
                     price={begI.price}
                 />
+                );  
+        case(this.props.planLevel === 'intermediate' && this.props.planType === 'Sprint'): 
+                let intS = PLAN.PLAN.tri.level.int.sprint
+                return (
+                <PlanModal
+                    planTitle={intS.title}
+                    sku={intS.sku}
+                    weeks={intS.weeks}
+                    miles={intS.miles}
+                    whyOne={intS.why1}
+                    whyTwo={intS.why2}
+                    price={intS.price}
+                />
+                );
+        case(this.props.planLevel === 'intermediate' && this.props.planType === 'Olympic'): 
+                let intO = PLAN.PLAN.tri.level.int.olympic
+                return (
+                <PlanModal
+                    planTitle={intO.title}
+                    sku={intO.sku}
+                    weeks={intO.weeks}
+                    miles={intO.miles}
+                    whyOne={intO.why1}
+                    whyTwo={intO.why2}
+                    price={intO.price}
+                />
                 ); 
+        case(this.props.planLevel === 'intermediate' && this.props.planType === 'Half Ironman'): 
+                let intHI = PLAN.PLAN.tri.level.int.halfIron
+                return (
+                <PlanModal
+                    planTitle={intHI.title}
+                    sku={intHI.sku}
+                    weeks={intHI.weeks}
+                    miles={intHI.miles}
+                    whyOne={intHI.why1}
+                    whyTwo={intHI.why2}
+                    price={intHI.price}
+                />
+                );
+        case(this.props.planLevel === 'intermediate' && this.props.planType === 'Ironman'): 
+                let intI = PLAN.PLAN.tri.level.int.iron
+                return (
+                <PlanModal
+                    planTitle={intI.title}
+                    sku={intI.sku}
+                    weeks={intI.weeks}
+                    miles={intI.miles}
+                    whyOne={intI.why1}
+                    whyTwo={intI.why2}
+                    price={intI.price}
+                />
+                );
+        case(this.props.planLevel === 'advanced' && this.props.planType === 'Sprint'): 
+                let advS = PLAN.PLAN.tri.level.adv.sprint
+                return (
+                <PlanModal
+                    planTitle={advS.title}
+                    sku={advS.sku}
+                    weeks={advS.weeks}
+                    miles={advS.miles}
+                    whyOne={advS.why1}
+                    whyTwo={advS.why2}
+                    price={advS.price}
+                />
+                );
+        case(this.props.planLevel === 'advanced' && this.props.planType === 'Olympic'): 
+                let advO = PLAN.PLAN.tri.level.adv.olympic
+                return (
+                <PlanModal
+                    planTitle={advO.title}
+                    sku={advO.sku}
+                    weeks={advO.weeks}
+                    miles={advO.miles}
+                    whyOne={advO.why1}
+                    whyTwo={advO.why2}
+                    price={advO.price}
+                />
+                );
+        case(this.props.planLevel === 'advanced' && this.props.planType === 'Half Ironman'): 
+                let advHI = PLAN.PLAN.tri.level.adv.halfIron
+                return (
+                <PlanModal
+                    planTitle={advHI.title}
+                    sku={advHI.sku}
+                    weeks={advHI.weeks}
+                    miles={advHI.miles}
+                    whyOne={advHI.why1}
+                    whyTwo={advHI.why2}
+                    price={advHI.price}
+                />
+                );
+        case(this.props.planLevel === 'advanced' && this.props.planType === 'Ironman'): 
+                let advI = PLAN.PLAN.tri.level.adv.iron
+                return (
+                <PlanModal
+                    planTitle={advI.title}
+                    sku={advI.sku}
+                    weeks={advI.weeks}
+                    miles={advI.miles}
+                    whyOne={advI.why1}
+                    whyTwo={advI.why2}
+                    price={advI.price}
+                />
+                );
         default: 
                 return (
-                    <PlanModal /> //Create error msg
+                    <ErrorBox />
                 )
     }
 }
