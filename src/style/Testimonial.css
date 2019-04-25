@@ -1,30 +1,26 @@
 .testimonialSection {
     box-shadow: inset 0px 0px 20px 1px slategrey;
     background-color: #00d8d8;
-    display: -webkit-flex;
-    display: flex;
     margin: 2em 0;
     padding: 5% 0;
 }
 
 .testimonialBox {
-    background-image: url(/water.jpg);
     background-size: cover;
     background-color: white;
     -webkit-flex: 1 1;
     flex: 1 1;
-    margin: auto;
+    margin: 10px auto;
     max-width: 85%;
-    box-shadow: 3px 2px 7px 0px midnightblue;
+    box-shadow: 3px 3px 5px 0px darkcyan;
     padding: 3%;
+    border-radius: 5px;
 }
 
 .testimonialInfo {
-    background-color: rgba(30, 226, 243, 0.6);
     padding: 2%;
     border-radius: 5px;
-    color: navy;
-    font-size: large;
+    font-size: small;
 }
 
 .testimonialArrow {
@@ -42,4 +38,19 @@
     padding: 0 1em;
     margin: auto;
     height: 5rem;
+    width: unset !important;
 }
+
+.carousel .slide {
+    background-color: transparent;
+}
+
+.carousel .slide-wrapper {
+    height: inherit;
+}
+
+  @media only screen and (min-width: 780px) {
+      .testimonialInfo {
+          font-size: large;
+      }
+  }

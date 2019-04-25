@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
 
 import ShowInfo from './ShowInfo';
 
-let PLAN = require('../PlanInfo');
 
 function PlanBox(props) {
     const [ level, setLevel ] = useState('');
@@ -57,11 +55,5 @@ function PlanBox(props) {
         )
     }
 
-    const mapStateToProps = state => ({
-        level: state.level,
-        type: state.type
-    });
 
 export default connect()(PlanBox);
-
-//just in case: <Link className="planLink" to={"/plan/" + JSON.stringify(level).replace(/\"/g, "") + JSON.stringify(type).replace(/\"/g, "")}></Link>
