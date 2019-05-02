@@ -71,10 +71,7 @@ nav {
     top: 10px;
     left: 10px;
     height: 2rem;
-    z-index: 2;
-    background-color: #00d8d8;
-    padding: 1%;
-    border-radius: 10px;
+    z-index: 7;
   }
 
   .navBtn:hover {

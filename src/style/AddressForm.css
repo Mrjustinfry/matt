@@ -1,0 +1,10 @@
+.addressForm {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+.adIn {
+    flex: 1;
+    margin: auto;
+}

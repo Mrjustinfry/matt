@@ -60,16 +60,3 @@ class Testimonial extends Component {
 }
 
 export default Testimonial;
-
-/*                <Carousel autoplay className="testimonialBox">
-                    <p className="testimonialInfo legend">
-                            <img src="./meryl.jpg" alt="user" className="testimonialImg" />
-                            "Matt put together an amazing comprehensive 15 week training plan to get me prepared to 
-                            run my first ever half marathon. Before putting it together he reached out to see what 
-                            my normal workout plan was, how many miles I can run in one sitting, what kinds of 
-                            lifting I do, etc. The plan was really put together for me and not just anyone wanting 
-                            to train for this kind of distance run..."                        
-                            </p>
-                    <p className="tesimonialInfo legend">Number 2</p>
-                    <p className="testimonialInfo legend">Number 3</p>
-               </Carousel> */
