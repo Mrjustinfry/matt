@@ -12,7 +12,7 @@ class Testimonial extends Component {
                 <Carousel 
                     showThumbs={false}
                     showStatus={false} 
-                    transitionTime={2000}
+
                     interval={10000}
                     autoPlay
                     infiniteLoop
