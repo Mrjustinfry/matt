@@ -36,15 +36,12 @@ function PlanBox(props) {
                         </div>
                         <div className="chosenSub"><p className="planHead">Type:</p><p className="chosenInfo">{type}</p></div>
                         <button className="chosenBtn"
-                        onClick={() => setPlanHidden('initial')}
-                        >See Details</button>
-                                                <button className="chosenBtn"
-                        onClick={() => setPlanHidden('none')}
-                        >Hide Details</button>
+                                onClick={() => setPlanHidden('initial')}
+                                >See Details</button>
+                        <button className="chosenBtn"
+                                onClick={() => setPlanHidden('none')}
+                                >Hide Details</button>
                     <div style={{display: planHidden}}>
-                    <p id="back"
-                        onClick={() => setPlanHidden('none')}
-                    >&larr; back to plans</p>
                     <ShowInfo
                         planLevel={level}
                         planType={type}

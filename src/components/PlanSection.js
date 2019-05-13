@@ -10,19 +10,31 @@ class PlanSection extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            plans: true
+            plans: true,
+            border2: '1px solid black',
+            border1: '',
+            margin1: '-1em',
+            margin2: 'initial'
         }
     }
 
     displayRunPlans() {
         this.setState({
-            plans: true
+            plans: true,
+            border2: '1px solid black',
+            border1: 'none',
+            margin1: '-1em',
+            margin2: 'initial'
         })
     } 
 
     displayTriPlans() {
         this.setState({
-            plans: false
+            plans: false,
+            border1: '1px solid black',
+            border2: 'none',
+            margin1: 'initial',
+            margin2: '-1em'
         })
     }
 
@@ -31,12 +43,12 @@ class PlanSection extends Component {
             <section className="PlanSection">
                 <Hero />
                 <div className="planTabs">
-                    <button 
+                    <button style={{borderBottom:this.state.border1,marginTop:this.state.margin1}}
                         className="runTab"
                         onClick={()=> this.displayRunPlans()}
                         >Running Plans
                     </button>
-                    <button 
+                    <button style={{borderBottom:this.state.border2,marginTop:this.state.margin2}}
                         className="triTab"
                         onClick={() => this.displayTriPlans()}
                         >Triathlon Plans

@@ -19,6 +19,8 @@
     background-image: url(/star.png);
     background-size: 1em;
     background-blend-mode: soft-light;
+    animation-name: appear;
+    animation-duration: 1s;
   }
   
   .whatList, .whyList {
@@ -117,6 +119,15 @@
     text-align: center;
   }
 
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media only screen and (min-width: 780px) {
       .planInnerBox {
         display: flex;
@@ -133,3 +144,4 @@
           font-size: larger;
       }
   }
+

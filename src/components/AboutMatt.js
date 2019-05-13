@@ -14,7 +14,7 @@ class AboutMatt extends Component {
             <div className="aboutInfo">
               <p>
                 <img src="./newspaper.png" alt="Conquering the Alps" className="newsImg" />
-                <span id="aboutMe">About me</span><br />
+                <span id="aboutMe">About Matt</span><br />
               I have been an athlete my whole life – from soccer to baseball, football, wrestling, track –
               I made it my daily goal to be as physically active as possible. Nailed a 4:43 mile in college,
               conquered the IRONMAN Triathlon in Coeur D'Alene Idaho and placed 16th in my age group.
