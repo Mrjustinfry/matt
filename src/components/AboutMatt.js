@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import ContactForm from './ContactForm';
+
 import '../style/AboutMatt.css';
 
 class AboutMatt extends Component {

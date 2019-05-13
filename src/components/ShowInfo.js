@@ -16,6 +16,7 @@ class ShowInfo extends Component {
             return (
                 <PlanModal
                     planTitle={beg5.title}
+                    details={beg5.details}
                     sku={beg5.sku}
                     weeks={beg5.weeks}
                     miles={beg5.miles}
@@ -29,6 +30,7 @@ class ShowInfo extends Component {
             return (
                 <PlanModal
                     planTitle={beg10.title}
+                    details={beg10.details}
                     sku={beg10.sku}
                     weeks={beg10.weeks}
                     miles={beg10.miles}
@@ -42,6 +44,7 @@ class ShowInfo extends Component {
             return (
                 <PlanModal
                     planTitle={begHM.title}
+                    details={begHM.details}
                     sku={begHM.sku}
                     weeks={begHM.weeks}
                     miles={begHM.miles}
@@ -55,6 +58,7 @@ class ShowInfo extends Component {
             return (
                 <PlanModal
                     planTitle={begM.title}
+                    details={begM.details}
                     sku={begM.sku}
                     weeks={begM.weeks}
                     miles={begM.miles}
@@ -68,6 +72,7 @@ class ShowInfo extends Component {
             return (
             <PlanModal
                 planTitle={ifive.title}
+                details={ifive.details}
                 sku={ifive.sku}
                 weeks={ifive.weeks}
                 miles={ifive.miles}
@@ -81,6 +86,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={iten.title}
+                    details={iten.details}
                     sku={iten.sku}
                     weeks={iten.weeks}
                     miles={iten.miles}
@@ -94,6 +100,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={iHM.title}
+                    details={iHM.details}
                     sku={iHM.sku}
                     weeks={iHM.weeks}
                     miles={iHM.miles}
@@ -107,6 +114,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={iM.title}
+                    details={iM.details}
                     sku={iM.sku}
                     weeks={iM.weeks}
                     miles={iM.miles}
@@ -120,6 +128,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={adv5k.title}
+                    details={adv5k.details}
                     sku={adv5k.sku}
                     weeks={adv5k.weeks}
                     miles={adv5k.miles}
@@ -133,6 +142,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={adv10k.title}
+                    details={adv10k.details}
                     sku={adv10k.sku}
                     weeks={adv10k.weeks}
                     miles={adv10k.miles}
@@ -146,6 +156,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advHM.title}
+                    details={advHM.details}
                     sku={advHM.sku}
                     weeks={advHM.weeks}
                     miles={advHM.miles}
@@ -159,6 +170,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advM.title}
+                    details={advM.details}
                     sku={advM.sku}
                     weeks={advM.weeks}
                     miles={advM.miles}
@@ -172,6 +184,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={begS.title}
+                    details={begS.details}
                     sku={begS.sku}
                     weeks={begS.weeks}
                     miles={begS.miles}
@@ -185,6 +198,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={begO.title}
+                    details={begO.details}
                     sku={begO.sku}
                     weeks={begO.weeks}
                     miles={begO.miles}
@@ -198,6 +212,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={begHI.title}
+                    details={begHI.details}
                     sku={begHI.sku}
                     weeks={begHI.weeks}
                     miles={begHI.miles}
@@ -211,6 +226,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={begI.title}
+                    details={begI.details}
                     sku={begI.sku}
                     weeks={begI.weeks}
                     miles={begI.miles}
@@ -224,6 +240,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={intS.title}
+                    details={intS.details}
                     sku={intS.sku}
                     weeks={intS.weeks}
                     miles={intS.miles}
@@ -237,6 +254,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={intO.title}
+                    details={intO.details}
                     sku={intO.sku}
                     weeks={intO.weeks}
                     miles={intO.miles}
@@ -250,6 +268,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={intHI.title}
+                    details={intHI.details}
                     sku={intHI.sku}
                     weeks={intHI.weeks}
                     miles={intHI.miles}
@@ -263,6 +282,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={intI.title}
+                    details={intI.details}
                     sku={intI.sku}
                     weeks={intI.weeks}
                     miles={intI.miles}
@@ -276,6 +296,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advS.title}
+                    details={advS.details}
                     sku={advS.sku}
                     weeks={advS.weeks}
                     miles={advS.miles}
@@ -289,6 +310,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advO.title}
+                    details={advO.details}
                     sku={advO.sku}
                     weeks={advO.weeks}
                     miles={advO.miles}
@@ -302,6 +324,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advHI.title}
+                    details={advHI.details}
                     sku={advHI.sku}
                     weeks={advHI.weeks}
                     miles={advHI.miles}
@@ -315,6 +338,7 @@ class ShowInfo extends Component {
                 return (
                 <PlanModal
                     planTitle={advI.title}
+                    details={advI.details}
                     sku={advI.sku}
                     weeks={advI.weeks}
                     miles={advI.miles}

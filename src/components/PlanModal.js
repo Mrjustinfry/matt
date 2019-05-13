@@ -10,6 +10,7 @@ class PlanModal extends Component {
             <section className="planSection">
                 <div className="container">
                     <h2 className="planTitle">{this.props.planTitle}</h2>
+                    <p className="details">{this.props.details}</p>
                     <div className="planInnerBox">
                     <div className="planBoxLeftTop">
                     <p className="skuNumber">SKU: {this.props.sku}</p>

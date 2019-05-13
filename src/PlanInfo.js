@@ -4,6 +4,7 @@ const PLAN = {
           'beg': {
             'fiveK': {
               'title': 'Beginners 5k',
+              'details': '3.1 Mile Race',
               'sku': 'b5K1239',
               'weeks': '12',
               'miles': '9-13',
@@ -13,6 +14,7 @@ const PLAN = {
             },
             'tenK': {
               'title': 'Beginners 10K',
+              'details': '6.2 Mile Race',
               'sku': 'b10k1249',
               'weeks': '12',
               'miles': '16-24',
@@ -22,6 +24,7 @@ const PLAN = {
             },
             'halfMarathon': {
               'title': 'Beginners Half Marathon',
+              'details': '13.1 Mile Race',
               'sku': 'bHM1459',
               'weeks': '14',
               'miles': '17-29',
@@ -31,6 +34,7 @@ const PLAN = {
             },
             'marathon': {
               'title': 'Beginners Marathon',
+              'details': '26.2 Mile Race',
               'sku': 'bM1679',
               'weeks': '16',
               'miles': '16-44',
@@ -42,6 +46,7 @@ const PLAN = {
           'int': {
             'fiveK': {
                 'title': 'Intermediate 5k',
+                'details': '3.1 Mile Race',
                 'sku': 'i5K1239',
                 'weeks': '12',
                 'miles': '14-20',
@@ -51,6 +56,7 @@ const PLAN = {
               },
             'tenK': {
                 'title': 'Intermediate 10K',
+                'details': '6.2 Mile Race',
                 'sku': 'i10k1249',
                 'weeks': '12',
                 'miles': '20-26',
@@ -60,6 +66,7 @@ const PLAN = {
             },
             'halfMarathon': {
                 'title': 'Intermediate Half Marathon',
+                'details': '13.1 Mile Race',
                 'sku': 'iHM1459',
                 'weeks': '14',
                 'miles': '27-41',
@@ -69,6 +76,7 @@ const PLAN = {
               },
             'marathon': {
                 'title': 'Intermediate Marathon',
+                'details': '26.2 Mile Race',
                 'sku': 'iM1679',
                 'weeks': '16',
                 'miles': '26-51',
@@ -80,6 +88,7 @@ const PLAN = {
           'adv': {
             'fiveK': {
                 'title': 'Advanced 5k',
+                'details': '3.1 Mile Race',
                 'sku': 'a5K1639',
                 'weeks': '16',
                 'miles': '16-33',
@@ -89,6 +98,7 @@ const PLAN = {
               },
             'tenK':{
                 'title': 'Advanced 10K',
+                'details': '6.2 Mile Race',
                 'sku': 'a10k1249',
                 'weeks': '12',
                 'miles': '14-39',
@@ -98,6 +108,7 @@ const PLAN = {
             },
             'halfMarathon': {
                 'title': 'Advanced Half Marathon',
+                'details': '13.1 Mile Race',
                 'sku': 'aHM1459',
                 'weeks': '14',
                 'miles': '30-50',
@@ -107,6 +118,7 @@ const PLAN = {
               },
             'marathon': {
                'title': 'Advanced Marathon',
+               'details': '26.2 Mile Race',
                'sku': 'aM1679',
                'weeks': '16',
                'miles': '34-65',
@@ -122,6 +134,7 @@ const PLAN = {
             'beg': {
                 'sprint': {
                     'title': 'Beginners Sprint',
+                    'details': 'Swim - 0.5mi (750m) Bike - 12.4mi (20km) Run - 3.1mi (5km)',
                     'sku': 'bS1249',
                     'weeks': '12',
                     'why1': 'Perhaps your very first triathlon? Warming up to this new world of pain? This plan is for you.',
@@ -130,6 +143,7 @@ const PLAN = {
                 },
                 'olympic': {
                     'title': `Beginner Olympic / 5150`,
+                    'details': 'Swim - 0.93mi (1.5km) Bike - 24.8mi (40km) Run - 6.2mi (10km)',
                     'sku': 'bO1659',
                     'weeks': '16',
                     'why1': `Could be your first time. Could just be aiming for the finish. Either way, you'll do the same triathlon distance as an olympian!!`,
@@ -138,6 +152,7 @@ const PLAN = {
                 },
                 'halfIron': {
                     'title': 'Beginners Half Ironman / 70.3',
+                    'details': 'Swim - 1.2mi (1.9km) Bike - 56mi (90km) Run - 13.1mi (21.09km)',
                     'sku': 'bHI24129',
                     'weeks': '24',
                     'why1': 'MATT! THIS IS MISSING!',
@@ -146,6 +161,7 @@ const PLAN = {
                 },
                 'iron': {
                     'title': 'Beginners Ironman / 140.2',
+                    'details': 'Swim - 2.4mi (3.8km) Bike - 112mi (180km) Run - 26.2mi (42.195km)',
                     'sku': 'bI24149',
                     'weeks': '24',
                     'why1': 'missing',
@@ -156,6 +172,7 @@ const PLAN = {
             'int': {
                 'sprint': {
                     'title': 'Intermediate Sprint',
+                    'details': 'Swim - 0.5mi (750m) Bike - 12.4mi (20km) Run - 3.1mi (5km)',
                     'sku': 'iS1649',
                     'weeks': '16',
                     'why1': `You've maybe done this race before...maybe not...maybe you just want to go home satisfied in the top 10% of your age group. No big thing.`,
@@ -164,6 +181,7 @@ const PLAN = {
                 },
                 'olympic': {
                     'title': 'Intermediate Olympic / 5150',
+                    'details': 'Swim - 0.93mi (1.5km) Bike - 24.8mi (40km) Run - 6.2mi (10km)',
                     'sku': 'iO1659',
                     'weeks': '16',
                     'why1': `You're off your training wheels and prepared to beat your PR. Go get it!!`,
@@ -172,6 +190,7 @@ const PLAN = {
                 },
                 'halfIron': {
                     'title': 'Intermediate Half Ironman / 70.3',
+                    'details': 'Swim - 1.2mi (1.9km) Bike - 56mi (90km) Run - 13.1mi (21.09km)',
                     'sku': 'iHI24129',
                     'weeks': '24',
                     'why1': 'Missing info',
@@ -180,6 +199,7 @@ const PLAN = {
                 },
                 'iron': {
                     'title': 'Intermediate Ironman / 140.2',
+                    'details': 'Swim - 2.4mi (3.8km) Bike - 112mi (180km) Run - 26.2mi (42.195km)',
                     'sku': 'iI24149',
                     'weeks': '24',
                     'why1': 'missing',
@@ -190,6 +210,7 @@ const PLAN = {
             'adv': {
                 'sprint': {
                     'title': 'Advanced Sprint',
+                    'details': 'Swim - 0.5mi (750m) Bike - 12.4mi (20km) Run - 3.1mi (5km)',
                     'sku': 'aS1249',
                     'weeks': '12',
                     'why1': 'You are looking to demolish the competition!',
@@ -198,6 +219,7 @@ const PLAN = {
                 },
                 'olympic': {
                     'title': 'Advanced Olympic / 5150',
+                    'details': 'Swim - 0.93mi (1.5km) Bike - 24.8mi (40km) Run - 6.2mi (10km)',
                     'sku': 'aO1659',
                     'weeks': '16',
                     'why1': 'MATT! This is missing!!!!',
@@ -206,6 +228,7 @@ const PLAN = {
                 },
                 'halfIron': {
                     'title': 'Advanced Half Ironman / 70.3',
+                    'details': 'Swim - 1.2mi (1.9km) Bike - 56mi (90km) Run - 13.1mi (21.09km)',
                     'sku': 'aHI24129',
                     'weeks': '24',
                     'why1': 'Missing',
@@ -214,6 +237,7 @@ const PLAN = {
                 },
                 'iron': {
                     'title': 'Advanced Ironman / 140.2',
+                    'details': 'Swim - 2.4mi (3.8km)  |  Bike - 112mi (180km)  |  Run - 26.2mi (42.195km)',
                     'sku': 'aI24149',
                     'weeks': '24',
                     'why1': 'missing',
